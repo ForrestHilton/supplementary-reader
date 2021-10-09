@@ -1,8 +1,7 @@
 #!/bin/bash
 
-image_name="$(ls -u ~/Pictures/ | head -n 1)"
+gnome-screenshot -a -f /tmp/image-to-voice.png
 
-tesseract ~/Pictures/"$image_name" /tmp/image-to-voice --oem 0
+tesseract /tmp/image-to-voice.png /tmp/image-to-voice --oem 0
 
-cat /tmp/image-to-voice.txt | spd-say -e -w && trash ~/Pictures/"$image_name"
-
+cat /tmp/image-to-voice.txt | spd-say -e -w 
