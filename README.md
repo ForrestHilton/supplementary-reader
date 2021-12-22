@@ -4,9 +4,12 @@ supplementary-reader is a simple screen reading tool for Linux users with slow o
 # Install #
 
 one option is:
+
+`
 sudo curl -o /usr/local/bin/supplementary-reader https://raw.githubusercontent.com/ForrestHilton/supplementary-reader/main/supplementary-reader 
 
 sudo pacman -Syu xclip espeak-ng gnome-screenshot tesseract bash
+`
 
 # Usage #
 hear are the three usages: 
