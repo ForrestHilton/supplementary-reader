@@ -3,7 +3,11 @@ supplementary-reader is a simple screen reading tool for Linux users with slow o
 
 # Install #
 
-/usr/local/bin
+one option is:
+sudo curl -o /usr/local/bin/supplementary-reader https://raw.githubusercontent.com/ForrestHilton/supplementary-reader/main/supplementary-reader 
+
+sudo pacman -Syu xclip espeak-ng gnome-screenshot tesseract bash
+
 # Usage #
 hear are the three usages: 
 
@@ -11,13 +15,13 @@ supplementary-reader speak selection [speed]
 supplementary-reader speak screenshot [speed]
 supplementary-reader stop
 
-speed is in words per minute and defaults to 225
+speed is in words per minute and defaults to 150
 
 # Dependency's #
 
 * xorg (sort of)
 * xclip
-* espeak (in the current version)
+* espeak-ng (in the current version)
 * gnome-screenshot (gnome is not required)
 * tesseract
 * bash
