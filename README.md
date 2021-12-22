@@ -31,14 +31,16 @@ speed is in words per minute and defaults to 150
 
 # Recommended Shortcuts #
 
-YOU ARE RESPONSIBLE FOR CONFIGURING SHORTCUTS on your operating system; however on kde, you can import shortcuts.khotkeys in shortcut settings. These are my recommendations:
+YOU ARE RESPONSIBLE FOR CONFIGURING SHORTCUTS on your operating system; however on kde, you can import `shortcuts.khotkeys` in shortcut settings. These are my recommendations:
 
-Ctrl-Alt-Shift-S      supplementary-reader speak screenshot 150
-Ctrl-Alt-S            supplementary-reader speak selection 150
-Ctrl-Alt-Shift-F      supplementary-reader speak screenshot 225
-Ctrl-Alt-F            supplementary-reader speak selection 225
-Ctrl-Alt-Shift-D      supplementary-reader stop
-Ctrl-Alt-D            supplementary-reader stop
+| shortcut             | command                                       |
+| -------------------- | --------------------------------------------- |
+| Ctrl-Alt-Shift-S     | supplementary-reader speak screenshot 150     |
+| Ctrl-Alt-S           | supplementary-reader speak selection 150      |
+| Ctrl-Alt-Shift-F     | supplementary-reader speak screenshot 225     |
+| Ctrl-Alt-F           | supplementary-reader speak selection 225      |
+| Ctrl-Alt-Shift-D     | supplementary-reader stop                     |
+| Ctrl-Alt-D           | supplementary-reader stop                     |
 
 # Contributing #
 
