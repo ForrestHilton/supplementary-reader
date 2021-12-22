@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function speak {
+    if [[ $1 == "selection" ]] ; then
+        xclip -o > /tmp/supplementary-reader.txt
+        echo hear2 > /tmp/test.txt
+    elif [[ $1 == "screenshot" ]] ; then
+        gnome-screenshot -a -f /tmp/supplementary-reader.png
+
+        tesseract /tmp/supplementary-reader.png /tmp/supplementary-reader --oem 0
+    else
+        echo You must specify either selection or screenshot with the second argument. >&2
+        exit 1
+    fi
+
+    SPEED=$2
+    if [[ $2 == "" ]] ;then
+        SPEED=150
+    fi
+
+    espeak-ng -s $SPEED "$(cat /tmp/supplementary-reader.txt)"
+}
+
+function stop {
+    killall espeak-ng
+}
+
+# run the named command
+"$@"
