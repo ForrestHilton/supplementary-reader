@@ -1,4 +1,4 @@
-supplementary-reader is a simple screen reading tool for Linux users with slow or dyslexic reading. It can use either OCR (image to text) on a section of the screen, or it can use text selection. 
+supplementary-reader is a simple screen reading tool for Linux users who read slowly or have dyslexia. It can use either OCR (image to text) on a section of the screen, or it can use text selection. 
 
 
 # Install #
@@ -12,12 +12,13 @@ sudo pacman -Syu xclip espeak-ng gnome-screenshot tesseract bash
 ```
 
 # Usage #
-hear are the three usages: 
+here are the three usages: 
 
+```
 supplementary-reader speak selection [speed]
 supplementary-reader speak screenshot [speed]
 supplementary-reader stop
-
+```
 speed is in words per minute and defaults to 150
 
 # Dependency's #
