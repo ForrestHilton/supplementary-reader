@@ -8,7 +8,7 @@ one option is:
 ```
 sudo curl -o /usr/local/bin/supplementary-reader https://raw.githubusercontent.com/ForrestHilton/supplementary-reader/main/supplementary-reader 
 
-sudo pacman -Syu xclip espeak-ng gnome-screenshot tesseract bash
+sudo pacman -Syu xclip espeak-ng gnome-screenshot tesseract tesseract-data-eng bash 
 ```
 
 # Usage #
@@ -49,3 +49,10 @@ Even bad contributions are welcome. Especially feel free to add optional or alte
 
 If you get speech dispatcher to work consistently, you can completely replace the espeak dependency.
 
+# TODO #
+
+Although the current configuration works for me, I would like to make this functionality available to a larger audience.
+* rewrite it in a different language?
+* incorporate this into a larger project?
+* use speech dispatcher?
+* hack together some kind of highlighting?  
