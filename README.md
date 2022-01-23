@@ -1,4 +1,4 @@
-supplementary-reader is a simple screen reading tool for Linux users who read slowly or have dyslexia. It can use either OCR (image to text) on a section of the screen, or it can use text selection. 
+supplementary-reader is a simple text reading tool for Linux users who read slowly or have dyslexia. It can use either OCR (image to text) on a section of the screen, or it can use text selection. 
 
 
 # Install #
