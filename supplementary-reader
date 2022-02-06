@@ -3,7 +3,6 @@
 function speak {
     if [[ $1 == "selection" ]] ; then
         xclip -o > /tmp/supplementary-reader.txt
-        echo hear2 > /tmp/test.txt
     elif [[ $1 == "screenshot" ]] ; then
         gnome-screenshot -a -f /tmp/supplementary-reader.png
 
